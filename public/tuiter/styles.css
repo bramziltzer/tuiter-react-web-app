@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    font-family: "Arial";
+    color: white;
+}
+
+.wd-thin-border-gray {
+    border-color: rgb(47, 51, 54);
+}
