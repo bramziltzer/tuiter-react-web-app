@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="public/vendors/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+  <h1>Welcome to JavaScript</h1>
+
+  <script>
+    // including javascript in the HTML is bad practice
+    function add(a,b) {
+      return a + b;
+    }
+    document.write(add(12,23))
+    /* very error prone*/
+    document.write('<h2>a + b = ' + add(12, 23) + '</h2>')
+    /* back ticks*/
+    document.write(`<h2>a + b = ${add(12, 23)}</h2>`)
+
+    document.write('<h1>List</h1>')
+    document.write('<ul>')
+    document.write('<li>Alice</li>')
+    document.write('<li>Bob</li>')
+    document.write('<li>Charlie</li>')
+
+    const students = ['Alice', 'Bob', 'Charlie']
+    for(let i=0; i<students.length; i++) {
+      document.write(`<li>${students[i]}</li>`)
+    }
+    document.write('</ul>')
+  </script>
+
+  <!--dynamically change this stuff-->
+  <h1>JSON House</h1>
+  Rooms: <span id="rooms"></span><br/>
+  Baths: <span id="baths"></span><br/>
+  Sqft: <span id="sqft"></span><br/>
+
+  <script src="house.js"></script>
+
+  <h1>List Objects</h1>
+  <script>
+    document.write('<ul>')
+    const students2 = [{name:'Alice'}, {name:'Bob'}, {name:'Charlie'}]
+    for(let i=0; i<students.length; i++) {
+      document.write(`<li>${students2[i].name}</li>`)
+    }
+    document.write('</ul>')
+
+    document.write('<ul>')
+    let Lis = ''
+    for(let i=0; i<students.length; i++) {
+      Lis += `<li>${students2[i].name}</li>`
+    }
+    document.write(Lis)
+    document.write('</ul>')
+
+    document.write('<h1>List 3</h1>')
+    document.write('<ul>')
+
+    let Lis3 = students2.map(function (student) {
+      return `<li>${student.name}</li>`
+    }).join('')
+    document.write(Lis3)
+    document.write('</ul>')
+
+    // new syntax for function is =>
+    // return is optional
+    // if only one parameter, don't need to include it?
+    let Lis4 = students2.map(student => `<li>${student.name}</li>`)
+                          .join('')
+    document.write(Lis4)
+    document.write('</ul>')
+
+  </script>
+
+
+    <ul id="jlist"></ul>
+  <!-- missed whatever he defined as jlist -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- putting jquery here so stuff above isn't affected -->
+  <script src="lecture5.js"></script>
+
+
+  <input placeholder="A" id="A"/>
+  <input placeholder="B" id="B"/>
+  <input placeholder="C" id="C"/>
+
+  <!-- old school version -->
+  <!-- include parentheses for raw javascript but won't use them in react, will give inf loop -->
+  <button onclick="add2()">Add</button>
+  <button  onclick="sub2()">Subtract</button>
+  <button  onclick="mult2()">Multiply</button>
+  <button onclick="div2()">Divide</button>
+
+  <hr/>
+  <button id="addBtn">Add</button>
+  <button id="subtractBtn" >Subtract</button>
+  <button id="multiplyBtn" >Multiply</button>
+  <button id="divideBtn" >Divide</button>
+
+
+  <button onclick="helloBtn()">Hello</button>
+
+  <script src="calculator.js"></script>
+
+</div>
+</body>
+</html>
