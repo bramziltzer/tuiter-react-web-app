@@ -4,7 +4,7 @@ export default [
         userName: 'Elon Musk',
         handle: 'elonmusk',
         time: '23h',
-        tweet: "I'm an insecure narcissist billionaire without empathy!",
+        tweet: "Amazing show about @Inspiration4x mission!",
         pageURL: 'netflix.com',
         pageName: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         pageTag: 'From training to launch to landing, this all-access docuseries ride along with the ' +
@@ -19,7 +19,8 @@ export default [
         userName: 'New York Post',
         handle: 'nypost',
         time: '23h',
-        tweet: 'Person nobody cares about seen doing something nobody cares about. Read more to hear NYPost right-wing talking points. <a href="https://trib.al/nx2Gfag">trib.al/nx2Gfag</a>',
+        tweet: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk\n ' +
+            '<a href="https://trib.al/nx2Gfag">trib.al/nx2Gfag</a>',
         pageURL: '',
         pageName: '',
         pageTag: '',
