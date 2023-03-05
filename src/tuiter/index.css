@@ -1,0 +1,118 @@
+.wd-search-icon {
+    top: 1.2rem;
+    color: gray;
+}
+
+.wd-no-space {
+    padding: 0;
+    margin: 0;
+}
+
+.wd-img-overlay {
+    bottom:10px;
+    left:5px;
+    padding-left: 10px;
+}
+
+.fa-stack.wd-stack-normal {
+    width: 20px;
+    height:16px;
+}
+
+.fa-stack-1x.wd-stack-element-normal {
+    width: 20px;
+    height:16px;
+    bottom:9px;
+}
+
+/* LEFT COLUMN */
+.btn-primary.wd-tuit-btn {
+    font-weight: bold;
+    background-color: rgb(29,161, 242);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-group-item.wd-navbar-item {
+    border: none;
+    color: darkslategray;
+}
+
+.list-group-item.wd-twitter-icon {
+    color: rgb(29,161, 242);
+    font-size: 1.5rem;
+}
+
+.active.wd-active-nav {
+    background-color: unset;
+    color: black;
+    font-weight: bold;
+}
+
+/* MAIN COLUMN */
+/* Search bar */
+.form-control.wd-form-control {
+    background: rgb(235,240,241);
+    border: none
+}
+
+/* Tabs*/
+.nav.wd-nav {
+    border:none;
+}
+
+.nav-link.wd-nav-link {
+    color:gray;
+}
+.nav-link.active.wd-nav-active {
+    border:none;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(29,161, 242);
+    color:black;
+}
+
+/* Card */
+.card.wd-card {
+    border-radius: unset;
+}
+
+.card-img.wd-card-img {
+    border-radius: unset;
+    padding-bottom: 3px;
+}
+
+.list-group-item.wd-list-group-item-main {
+    border:none;
+
+}
+
+/* RIGHT BAR */
+.list-group.wd-list-group {
+    border-radius: 20px;
+}
+
+.list-group-item.wd-list-group-item {
+    border-style: none;
+    background-color: rgb(235,240,241);
+}
+
+.btn-primary.wd-follow-btn {
+    background-color: black;
+    border: none;
+}
+
+{
+    color: inherit;
+}
+
+.wd-list-group-item.wd-more-link a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+a.wd-link-unformat, a.wd-link-unformat:link, a.wd-link-unformat:visited,
+a.wd-link-unformat:hover, a.wd-link-unformat:active {
+    text-decoration: none;
+    color: inherit;
+    text-underline: none;
+}
