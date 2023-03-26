@@ -11,7 +11,7 @@ const ImageFormat = (post) => {
                     <p className="wd-no-space card-title">{post.pageName}</p>
                     <p className="wd-no-space text-muted card-text">{post.pageTag}</p>
                     <p className="wd-no-space text-muted text-truncate">
-                        <i className="bi bi-link-45deg"></i>
+                        <i className="bi bi-link-45deg "></i>
                         <a href='#' className="stretched-link wd-link-unformat">{post.pageURL}</a>
                     </p>
 
