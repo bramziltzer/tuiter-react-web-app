@@ -43,8 +43,6 @@ const TuitItem = (post) => {
                 </div>
 
                 <div className="col">
-                    <i className="bi bi-x-lg float-end"
-                       onClick={() => deleteTuitHandler(post)}></i>
                     {post.retweet === true &&
                         <div className={"text-muted fw-semibold"}>
                             <i className="bi bi-arrow-left-right me-1"></i>{post.retweetBy} Retweeted
@@ -53,7 +51,8 @@ const TuitItem = (post) => {
                         {post.userName}<i className="bi bi-check-circle-fill ms-1 me-1 text-primary"></i>
                         <span className="text-muted fw-normal">{post.handle}</span>
                         <span className="text-muted fw-normal ms-1">• {post.time}</span>
-                        <a><i className="bi bi-three-dots float-end"></i></a>
+                        <i role="button" className="bi bi-x-lg float-end"
+                           onClick={() => deleteTuitHandler(post)}></i>
                     </span>
                     <p className="wd-no-space pb-2">{post.tuit}</p>
 
