@@ -11,7 +11,7 @@ const ImageFormat = (post) => {
                     <p className="wd-no-space card-title">{post.pageName}</p>
                     <p className="wd-no-space text-muted card-text">{post.pageTag}</p>
                     <p className="wd-no-space text-muted text-truncate">
-                        <i className="bi bi-link-45deg "></i>
+                        <i className="bi bi-link-45deg"></i>
                         <a href='#' className="stretched-link wd-link-unformat">{post.pageURL}</a>
                     </p>
 
@@ -51,7 +51,7 @@ const TuitItem = (post) => {
                         {post.userName}<i className="bi bi-check-circle-fill ms-1 me-1 text-primary"></i>
                         <span className="text-muted fw-normal">{post.handle}</span>
                         <span className="text-muted fw-normal ms-1">• {post.time}</span>
-                        <i role="button" className="bi bi-x-lg float-end"
+                        <i className="bi bi-x-lg float-end"
                            onClick={() => deleteTuitHandler(post)}></i>
                     </span>
                     <p className="wd-no-space pb-2">{post.tuit}</p>
