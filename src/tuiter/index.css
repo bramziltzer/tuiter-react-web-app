@@ -116,3 +116,20 @@ a.wd-link-unformat:hover, a.wd-link-unformat:active {
     color: inherit;
     text-underline: none;
 }
+
+.wd-red-fill {
+    color:red;
+}
+
+.wd-profile-pic {
+    top:160px;
+}
+
+.wd-edit-profile-pic {
+    left:76px;
+    top:208px;
+}
+.wd-edit-banner-pic {
+    top:130px;
+    left:40%;
+}

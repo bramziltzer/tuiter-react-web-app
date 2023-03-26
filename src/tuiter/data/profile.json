@@ -1,0 +1,15 @@
+{
+  "firstName": "Bram",
+  "lastName": "Ziltzer",
+  "handle": "@bziltzer",
+  "profilePicture": "/images/logos/reactlogo.png",
+  "bannerPicture": "/images/banner.jpg",
+  "bio": "Here's my bio, and ain't it a clever one. Retuits and likes ARE endorsements. Please pay me.",
+  "website": "youtube.com/webdevtv",
+  "location": "Boston, MA",
+  "dateOfBirth": "7/7/1968",
+  "dateJoined": "4/2009",
+  "followingCount": 340,
+  "followersCount": 223,
+  "tweets": 4386
+}

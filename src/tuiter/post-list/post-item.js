@@ -25,7 +25,6 @@ const ImageFormat = (post) => {
 
 const PostListItem = (post) => {
     return(
-    <li className="list-group-item">
         <div className="row">
             <div className="col-1 ps-2 me-4 me-md-3 me-xl-2">
                 <img className="rounded-circle" width="48px" src={`/images/${post.avatarIcon}`}/>
@@ -72,8 +71,6 @@ const PostListItem = (post) => {
                 </div>
             </div>
         </div>
-    </li>
-    
     );
 }
 export default PostListItem;
