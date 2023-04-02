@@ -1,6 +1,6 @@
 import TuitStats from "./tuit-stats"
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 
 const ImageFormat = (post) => {
     if (post.hasOwnProperty('pageURL') && post.pageURL.length > 0) {
@@ -31,11 +31,10 @@ const ImageFormat = (post) => {
 
 const TuitItem = (post) => {
     const dispatch = useDispatch();
-    const deleteTuitHandler = (tuit) => {
-        const id = tuit._id;
-        console.log(id)
-        dispatch(deleteTuit(id));
+    const deleteTuitHandler = (post) => {
+        dispatch(deleteTuitThunk(post._id));
     }
+
     return(
             <div className="row">
                 <div className="col-1 ps-2 me-4 me-md-3 me-xl-2">

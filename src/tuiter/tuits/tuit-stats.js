@@ -1,30 +1,34 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {tuitLikeToggle} from "../reducers/tuits-reducer";
+import {updateTuitThunk} from "../services/tuits-thunks";
+
 const TuitStats = ({post}) => {
     const dispatch = useDispatch();
-    const LikeToggle = (post) => {
-        dispatch(tuitLikeToggle(post))
-    };
+
     return (
-        <div className="text-muted row pt-2 ps-1">
-            <div className="col-3" href="#">
+        <div className="text-muted d-flex justify-content-start pt-2">
+            <div className="me-4" href="#">
                 <i className="bi bi-chat me-1"></i>
                 {post.replies}
             </div>
-            <div className="col" href="#">
+            <div className="me-4" href="#">
                 <i className="bi bi-arrow-repeat me-1"></i>
                 {post.retuits}
             </div>
-            <div className="col" href="#">
-                <button onClick={()=>LikeToggle(post)}
-                    className={"bg-white border-0 text-muted wd-no-space"}>
-                    {post.liked && <i className="bi bi-heart-fill wd-red-fill me-1"></i>}
-                    {!post.liked && <i className="bi bi-heart me-1"></i>}
-                </button>
-                {post.likes}
+            <div className="me-4" href="#">
+                <span>
+                    Likes: {post.likes}
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes + 1
+                    }))} className="bi bi-heart-fill ms-2 me-2 text-danger"></i>
+                    <i onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes - 1
+                    }))} className="bi bi-hand-thumbs-down-fill text-black"></i>
+                </span>
             </div>
-            <div className="col" href="#">
+            <div className="" href="#">
                 <i className="bi bi-upload"></i>
             </div>
         </div>
