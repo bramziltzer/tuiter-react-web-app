@@ -16,6 +16,7 @@ const profileSlice = createSlice({
     }
 });
 
+
 export const {
     updateProfile
 } = profileSlice.actions
